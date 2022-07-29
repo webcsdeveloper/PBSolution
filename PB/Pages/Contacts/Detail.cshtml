@@ -1,0 +1,61 @@
+﻿@page "{contactId:int}"
+@model PB.Pages.Contacts.DetailModel
+@{
+}
+
+@if (Model.CommitMessage != null)
+{
+    //TempData.Keep("CommitMessage");
+    <div class="alert alert-info">@Model.CommitMessage</div>
+}
+
+
+<h1> جزئیات </h1>
+
+<div>
+    شناسه: @Model.Contact.ContactID
+</div>
+<div>
+    نام: @Model.Contact.FirstName
+</div>
+<div>
+    نام خانوادگی: @Model.Contact.LastName
+</div>
+<div>
+    کد ملی: @Model.Contact.NationalCode
+</div>
+<div>
+    کد پرسنلی: @Model.Contact.PersonalCode
+</div>
+<div>
+    واحد سازمانی: @Model.Contact.Unit
+</div>
+<div>
+    سمت: @Model.Contact.Role
+</div>
+<div>
+    تلفن کار: @Model.Contact.WPhoneNo
+</div>
+<div>
+    شماره داخلی: @Model.Contact.WInternalNo
+</div>
+<div>
+    آدرس محل کار: @Model.Contact.WAddrDesc
+</div>
+<div>
+    کد پستی محل کار: @Model.Contact.WPostalCode
+</div>
+<div>
+    شماره موبایل: @Model.Contact.CPNo
+</div>
+<div>
+    تلفن منزل: @Model.Contact.HPhoneNo
+</div>
+<div>
+    آدرس منزل: @Model.Contact.HAddrDesc
+</div>
+<div>
+    کد پستی منزل: @Model.Contact.HPostalCode
+</div>
+
+<a asp-page="/Index" class="btn btn-outline-primary">برگشت به لیست اطلاعات تماس</a>

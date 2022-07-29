@@ -1,0 +1,119 @@
+﻿<!--@page
+@model PB.Pages.Contacts.ListContactsModel
+@{
+    ViewData["title"] = "لیست تماس ها";
+}-->
+
+<!-- Search Form -->
+<!--<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input asp-for="SearchQuery" type="search" class="form-control" name="SearchQuery" />
+            <button type="submit" class="btn btn-success">
+                <span class="bi-search"></span>
+            </button>
+            <a asp-page="./Edit" class="btn btn-group">
+                <i class="bi bi-plus"></i>
+            </a>
+        </div>
+    </div>
+</form>-->
+
+
+<!-- Search Result -->
+<!--<h4> اطلاعات تماس</h4> 
+<hr />
+<div class="row">
+    <div class="col-12">
+
+        <table class="table">
+
+            <tr>
+
+                <th>
+                    شناسه
+                </th>
+
+                <th>
+                    نام
+                </th>
+
+                <th>
+                    نام خانوادگی
+                </th>
+
+                <th>
+                    سازمان
+                </th>
+
+                <th>
+                    واحد
+                </th>
+
+                <th>
+                    سمت
+                </th>
+
+                <th>
+                    شماره تلفن
+                </th>
+
+                <th>
+                    شماره داخلی
+                </th>
+                <th>
+                    عملیات
+                </th>
+            </tr>
+
+            @foreach (var contact in Model.Contacts)
+            {
+        <tr>
+            <td>
+                @contact.ContactID
+            </td>
+            <td>
+                @contact.FirstName
+            </td>
+            <td>
+                @contact.LastName
+            </td>
+            <td>
+                @contact.Organization
+            </td>
+            <td>
+                @contact.Unit
+            </td>
+            <td>
+                @contact.Role
+            </td>
+            <td>
+                @contact.WPhoneNo
+            </td>
+            <td>
+                @contact.WInternalNo
+            </td>
+            <td>
+                <a class="btn btn-lg" asp-page="./Detail" asp-route-contactId="@contact.ContactID">
+                    <i class="bi bi-info-circle"></i>
+                </a>
+                <a class="btn btn-lg" asp-page="./Edit" asp-route-contactId="@contact.ContactID">
+                    <i class="bi bi-pencil"></i>
+                </a>
+                <i class="bi bi-trash"></i>
+            </td>
+        </tr>
+            }
+        </table>
+    </div>
+</div>
+
+@if (Model.Contacts.Count() <= 0)
+{
+    <div> متاسفانه هیچ رکوردی یافت نگردید. </div>
+}
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>-->

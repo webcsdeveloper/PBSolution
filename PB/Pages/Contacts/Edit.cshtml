@@ -1,0 +1,77 @@
+﻿@page "{contactId:int?}"
+@model PB.Pages.Contacts.EditModel
+@{
+}
+<h1> جزئیات </h1>
+
+<div class="row">
+    <div class="col-5">
+
+        <form method="post">
+            <input type="hidden" asp-for="Contact.ContactID" />
+            <div>
+                <label asp-for="Contact.FirstName"></label>
+                <input asp-for="Contact.FirstName" class="form-control" />
+                <span class="text-danger" asp-validation-for="Contact.FirstName"></span>
+            </div>
+            <div>
+                <label asp-for="Contact.LastName"></label>
+                <input asp-for="Contact.LastName" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.NationalCode"></label>
+                <input asp-for="Contact.NationalCode" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.PersonalCode"></label>
+                <input asp-for="Contact.PersonalCode" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.Unit"></label>
+                <input asp-for="Contact.Unit" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.Role"></label>
+                <input asp-for="Contact.Role" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.WPhoneNo"></label>
+                <input asp-for="Contact.WPhoneNo" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.WInternalNo"></label>
+                <input asp-for="Contact.WInternalNo" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.WAddrDesc"></label>
+                <input asp-for="Contact.WAddrDesc" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.WPostalCode"></label>
+                <input asp-for="Contact.WPostalCode" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.CPNo"></label>
+                <input asp-for="Contact.CPNo" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.HPhoneNo"></label>
+                <input asp-for="Contact.HPhoneNo" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.HAddrDesc"></label>
+                <input asp-for="Contact.HAddrDesc" class="form-control" />
+            </div>
+            <div>
+                <label asp-for="Contact.HPostalCode"></label>
+                <input asp-for="Contact.HPostalCode" class="form-control" />
+            </div>
+            <button type="submit" class="btn border-primary">بروزرسانی اطلاعات</button>
+
+        </form>
+
+    </div>
+</div>
+
+
+<a asp-page="./listcontacts" class="btn btn-outline-primary">برگشت به لیست اطلاعات تماس</a>

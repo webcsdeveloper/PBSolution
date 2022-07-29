@@ -1,0 +1,12 @@
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\bin\Debug\net5.0\PB.Core.deps.json
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\bin\Debug\net5.0\PB.Core.dll
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\bin\Debug\net5.0\PB.Core.pdb
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\obj\Debug\net5.0\PB.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\obj\Debug\net5.0\PB.Core.AssemblyInfoInputs.cache
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\obj\Debug\net5.0\PB.Core.AssemblyInfo.cs
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\obj\Debug\net5.0\PB.Core.csproj.CoreCompileInputs.cache
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\obj\Debug\net5.0\PB.Core.dll
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\obj\Debug\net5.0\ref\PB.Core.dll
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\obj\Debug\net5.0\PB.Core.pdb
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\bin\Debug\net5.0\ref\PB.Core.dll
+C:\Users\webcsdeveloper\source\repos\PBSolution\PB.Core\obj\Debug\net5.0\PB.Core.csprojAssemblyReference.cache

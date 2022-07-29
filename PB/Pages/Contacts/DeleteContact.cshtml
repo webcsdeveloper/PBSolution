@@ -1,0 +1,72 @@
+﻿@page "{contactId:int}"
+@model PB.Pages.Contacts.DeleteContactModel
+@{
+}
+
+@if (Model.IsDBChanged == true)
+{
+    <h2>اطلاعات تماس @Model.Contact.FirstName @Model.Contact.LastName با موقیت حذف گردید</h2>
+    <a asp-page="/Index" class="btn btn-outline-primary">برگشت به لیست اطلاعات تماس</a>
+}
+else
+{
+    <h2>آیا از حذف اطلاعات مربوط به @Model.Contact.FirstName @Model.Contact.LastName @Model.Contact.Role اطمینان دارید؟</h2>
+    <form method="post">
+        <div class="form-group">
+            <div class="input-group">
+                <input type="hidden" name="isforconfirm" value="1" />
+                <input type="hidden" name="contactId" value="@Model.Contact.ContactID" />
+                <button type="submit" class="btn btn-success">
+                    بله، مطمئن هستم
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <div>
+        شناسه: @Model.Contact.ContactID
+    </div>
+    <div>
+        نام: @Model.Contact.FirstName
+    </div>
+    <div>
+        نام خانوادگی: @Model.Contact.LastName
+    </div>
+    <div>
+        کد ملی: @Model.Contact.NationalCode
+    </div>
+    <div>
+        کد پرسنلی: @Model.Contact.PersonalCode
+    </div>
+    <div>
+        واحد سازمانی: @Model.Contact.Unit
+    </div>
+    <div>
+        سمت: @Model.Contact.Role
+    </div>
+    <div>
+        تلفن کار: @Model.Contact.WPhoneNo
+    </div>
+    <div>
+        شماره داخلی: @Model.Contact.WInternalNo
+    </div>
+    <div>
+        آدرس محل کار: @Model.Contact.WAddrDesc
+    </div>
+    <div>
+        کد پستی محل کار: @Model.Contact.WPostalCode
+    </div>
+    <div>
+        شماره موبایل: @Model.Contact.CPNo
+    </div>
+    <div>
+        تلفن منزل: @Model.Contact.HPhoneNo
+    </div>
+    <div>
+        آدرس منزل: @Model.Contact.HAddrDesc
+    </div>
+    <div>
+        کد پستی منزل: @Model.Contact.HPostalCode
+    </div>
+}
+
